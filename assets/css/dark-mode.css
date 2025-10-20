@@ -1,0 +1,145 @@
+/* Dark Mode Styles */
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --card-bg: #2d2d2d;
+  --border-color: #404040;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #ffffff;
+  --border-color: #e0e0e0;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply dark mode styles */
+[data-theme="dark"] body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .navbar {
+  background-color: var(--card-bg) !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .nav-link {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .nav-link:hover {
+  color: #df6951 !important;
+}
+
+[data-theme="dark"] .card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .card h1,
+[data-theme="dark"] .card h2,
+[data-theme="dark"] .card h3,
+[data-theme="dark"] .card h4,
+[data-theme="dark"] .card h5,
+[data-theme="dark"] .card h6,
+[data-theme="dark"] .card p,
+[data-theme="dark"] .card span,
+[data-theme="dark"] .card a {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .card .text-secondary {
+  color: #b0b0b0 !important;
+}
+
+[data-theme="dark"] .hero-bg {
+  filter: brightness(0.7);
+}
+
+[data-theme="dark"] .section-title,
+[data-theme="dark"] .section-sub-title {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .text-secondary {
+  color: #b0b0b0 !important;
+}
+
+[data-theme="dark"] .btn-outline-dark {
+  border-color: var(--text-color);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .btn-outline-dark:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+[data-theme="dark"] .dropdown-menu {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .dropdown-item {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .dropdown-item:hover {
+  background-color: var(--border-color);
+}
+
+[data-theme="dark"] .form-control {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .form-control:focus {
+  background-color: var(--card-bg);
+  border-color: #007bff;
+  color: var(--text-color);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Theme toggle button */
+#theme-toggle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Booking section dark mode styles */
+[data-theme="dark"] #booking h1,
+[data-theme="dark"] #booking h2,
+[data-theme="dark"] #booking h3,
+[data-theme="dark"] #booking h4,
+[data-theme="dark"] #booking h5,
+[data-theme="dark"] #booking h6,
+[data-theme="dark"] #booking p,
+[data-theme="dark"] #booking span,
+[data-theme="dark"] #booking div {
+  color: #ffffff !important;
+}
+
+/* Hero section dark mode styles */
+[data-theme="dark"] .hero-area-wrap p {
+  color: #ffffff !important;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
